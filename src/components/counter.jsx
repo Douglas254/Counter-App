@@ -5,15 +5,10 @@ class Counter extends Component {
     count: 45,
   };
 
-  styles = {
-    fontSize: 20,
-    fontWeight: "bold",
-  };
-
   render() {
     return (
       <React.Fragment>
-        <span style={this.styles}>{this.formatCount()}</span>
+        <span style={{ fontSize: 30 }}>{this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Increment</button>
       </React.Fragment>
     );
